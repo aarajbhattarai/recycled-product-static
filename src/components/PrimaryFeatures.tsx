@@ -8,35 +8,37 @@ import clsx from 'clsx'
 import { Container } from '@/components/Container'
 import backgroundImage from '@/images/background-features.jpg'
 import screenshotExpenses from '@/images/screenshots/expenses.png'
-import screenshotPayroll from '@/images/screenshots/payroll.png'
+import PollutionImage from '@/images/gallery/pollution.png'
+import RecyclingImage from '@/images/gallery/recycle.png'
+import Imagesustain from '@/images/sustain.png'
 import screenshotReporting from '@/images/screenshots/reporting.png'
-import screenshotVatReturns from '@/images/screenshots/vat-returns.png'
+import makingjeans from '@/images/Making jeans.png'
 
 const features = [
   {
     title: 'Environmental Impact Awareness',
     description:
       "The fashion industry contributes to 10% of global carbon emissions and 20% of wastewater. We aim to raise awareness and drive action for sustainability. ",
-    image: screenshotPayroll,
+    image: PollutionImage,
   },
   {
     title: 'Recycling Initiative',
     description:
       "Our initiative repurposes old denim into stylish bags, reducing waste and promoting circular fashion."+ 
       "We're committed to minimizing environmental impact through innovative recycling practices.",
-    image: screenshotExpenses,
+    image: RecyclingImage,
   },
   {
     title: 'Social Responsibility',
     description:
       "We believe in the power of collective action and strive to create opportunities for sustainable livelihoods while making a difference in the world.",
-    image: screenshotVatReturns,
+    image: makingjeans,
   },
   {
     title: 'Towards a Sustainable Future',
     description:
       'By joining hands with Lezlaj, you contribute to the movement towards a greener, cleaner planet, where fashion and sustainability go hand in hand.',
-    image: screenshotReporting,
+    image: Imagesustain,
   },
 ]
 
@@ -81,7 +83,7 @@ export function PrimaryFeatures() {
           <br />Our Sustainable Initiatives
           </h2>
           <p className="mt-6 text-lg tracking-tight text-blue-100">
-          Discover the 'why' behind our actions. Explore our mission to understand the driving force behind our endeavors.
+          Discover the &apos; why &apos; behind our actions. Explore our mission to understand the driving force behind our endeavors.
           </p>
         </div>
         <Tab.Group

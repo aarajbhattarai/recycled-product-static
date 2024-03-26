@@ -9,6 +9,10 @@ import { Container } from '@/components/Container'
 import screenshotContacts from '@/images/screenshots/contacts.png'
 import screenshotInventory from '@/images/screenshots/inventory.png'
 import screenshotProfitLoss from '@/images/screenshots/profit-loss.png'
+import RecycleBoxJeans from '@/images/gallery/give us jeans.png';
+import GlowupImage from '@/images/gallery/createbag.png';
+import FinalImage from '@/images/gallery/finalproduct.png';
+
 
 interface Feature {
   name: React.ReactNode
@@ -24,7 +28,7 @@ const features: Array<Feature> = [
     summary: 'Send Us Your Jeans',
     description:
       'After we receive your jeans they are taken on a journey where they are carefully repurposed, and transformed.',
-    image: screenshotProfitLoss,
+    image: RecycleBoxJeans,
     icon: function ReportingIcon() {
       let id = useId()
       return (
@@ -59,7 +63,7 @@ const features: Array<Feature> = [
       'Denim Transformation Process',
     description:
       'Our process ingeniously transforms discarded jeans into stylish and eco-friendly accessories, ensuring that every piece finds a purposeful new life.',
-    image: screenshotInventory,
+    image: GlowupImage,
     icon: function InventoryIcon() {
       return (
         <>
@@ -84,10 +88,10 @@ const features: Array<Feature> = [
   {
     name: 'Creative Design Showcase',
     summary:
-      'Your contribution to environmental and social positivity',
+      'The culmination of our efforts',
     description:
-      'Congratulations! With your help, we have made a meaningful difference in sustainability and social well-being.',
-    image: screenshotContacts,
+      `A final product crafted from recycled jeans, making a tangible difference in sustainability and social well-being.`,
+    image: FinalImage,
     icon: function ContactsIcon() {
       return (
         <>

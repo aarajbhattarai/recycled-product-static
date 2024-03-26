@@ -8,6 +8,9 @@ import logoStatamic from '@/images/logos/statamic.svg'
 import logoStaticKit from '@/images/logos/statickit.svg'
 import logoTransistor from '@/images/logos/transistor.svg'
 import logoTuple from '@/images/logos/tuple.svg'
+import logokrayasa from '@/images/logos/krayasa logo.png'
+import logorefobe from '@/images/logos/refobe.png'
+
 
 export function Hero() {
   return (
@@ -31,7 +34,7 @@ export function Hero() {
       Transforming denim waste into stylish essentials, we offer eco-conscious fashion that makes a statement - 
       without leaving a footprint
       </p>
-      <div className="mt-10 flex justify-center gap-x-6">
+      {/* <div className="mt-10 flex justify-center gap-x-6">
         <Button href="/register">Get Started</Button>
         <Button
           href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
@@ -43,10 +46,10 @@ export function Hero() {
           >
             <path d="m9.997 6.91-7.583 3.447A1 1 0 0 1 1 9.447V2.553a1 1 0 0 1 1.414-.91L9.997 5.09c.782.355.782 1.465 0 1.82Z" />
           </svg>
-          <span className="ml-3">Watch video</span>
+          <span className="ml-3">Watch our video</span>
         </Button>
-      </div>
-      <div className="mt-36 lg:mt-44">
+      </div> */}
+      <div className="mt-36 lg:mt-30 ">
         <p className="font-display text-base text-slate-900">
           We have had the pleasure of working with 
         </p>
@@ -54,16 +57,12 @@ export function Hero() {
           role="list"
           className="mt-8 flex items-center justify-center gap-x-8 sm:flex-col sm:gap-x-0 sm:gap-y-10 xl:flex-row xl:gap-x-12 xl:gap-y-0"
         >
-          {[
+          <Image src={logokrayasa} alt="Krayasa" width={150} height={100} unoptimized />
+          <Image src={logorefobe} alt="Krayasa" width={150} height={100} unoptimized />
+          {/* {[
             [
-              { name: 'Transistor', logo: logoTransistor },
               { name: 'Tuple', logo: logoTuple },
               { name: 'StaticKit', logo: logoStaticKit },
-            ],
-            [
-              { name: 'Mirage', logo: logoMirage },
-              { name: 'Laravel', logo: logoLaravel },
-              { name: 'Statamic', logo: logoStatamic },
             ],
           ].map((group, groupIndex) => (
             <li key={groupIndex}>
@@ -78,7 +77,7 @@ export function Hero() {
                 ))}
               </ul>
             </li>
-          ))}
+          ))} */}
         </ul>
       </div>
     </Container>

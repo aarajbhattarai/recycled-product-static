@@ -1,7 +1,6 @@
-import Image from 'next/image'
-
-import { Container } from '@/components/Container'
-import backgroundImage from '@/images/background-faqs.jpg'
+import Image from 'next/image';
+import { Container } from '@/components/Container';
+import backgroundImage from '@/images/background-faqs.jpg';
 
 const faqs = [
   [
@@ -48,7 +47,6 @@ const faqs = [
   ],
 ];
 
-
 export function Faqs() {
   return (
     <section
@@ -73,8 +71,8 @@ export function Faqs() {
             Frequently asked questions
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
-          If you can't find what you're looking for, reach out to our support team. 
-          We're here to assist you with any questions or concerns you may have.
+          If you can&apos;t find what you&apos;re looking for, reach out to our support team. 
+          We&apos;re here to assist you with any questions or concerns you may have.
           </p>
         </div>
         <ul
