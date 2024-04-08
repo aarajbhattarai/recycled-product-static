@@ -1,11 +1,12 @@
 import Image from 'next/image'
 
 import { Container } from '@/components/Container'
-import avatarImage1 from '@/images/avatars/avatar-1.png'
+import avatarImage1 from '@/images/avatars/Avatar1.jpg'
 import avatarImage2 from '@/images/avatars/avatar-2.png'
-import avatarImage3 from '@/images/avatars/avatar-3.png'
+import avatarImage3 from '@/images/avatars/Avatar3.jpg'
 import avatarImage4 from '@/images/avatars/avatar-4.png'
 import avatarImage5 from '@/images/avatars/avatar-5.png'
+import avatarImage6 from '@/images/avatars/Avatar-6.png'
 
 const testimonials = [
   [
@@ -14,16 +15,16 @@ const testimonials = [
         `Using Lezlaj's denim bags has been a game-changer for me. Not only are they stylish, but knowing they're made from recycled jeans makes me feel good about my fashion choices.`,
       author: {
         name: 'Prabish Dangi',
-        role: 'Designer at Krayasa',
+        role: 'Designer',
         image: avatarImage1,
       },
     },
     {
       content:
-        `I donated my old jeans to Lezlaj and was amazed to see them transformed into beautiful bags. It's inspiring to see how a simple act of recycling can make a big impact`,
+        `I donated my old jeans to Lezlaj and was amazed to see them transformed into beautiful bags. It's inspiring to see how a simple act of recycling can make a big impact.`,
       author: {
-        name: 'Saujanya Sharma',
-        role: 'Student',
+        name: 'Agnes Wilson',
+        role: 'Fashion Entrepreneur',
         image: avatarImage4,
       },
     },
@@ -33,8 +34,8 @@ const testimonials = [
       content:
         `As a supporter of sustainable fashion, I love what Lezlaj is doing. Their mission to repurpose denim into trendy accessories aligns perfectly with our company's values of environmental stewardship`,
       author: {
-        name: 'Ralph Lauren',
-        role: 'Founder of Ralph Lauren',
+        name: 'Sajan Thapa',
+        role: 'Environmental Advocate',
         image: avatarImage5,
       },
     },
@@ -42,7 +43,7 @@ const testimonials = [
       content:
         `I've received so many compliments on my Lezlaj denim bag! It's not only fashionable but also durable and eco-friendly. I'm proud to support a brand that prioritizes sustainability.`,
       author: {
-        name: 'Kritartha Sapkota',
+        name: 'Elena Petrova',
         role: 'Fashion Model',
         image: avatarImage2,
       },
@@ -53,7 +54,7 @@ const testimonials = [
       content:
         'Donating my old jeans to Lezlaj was such a rewarding experience. Seeing them transformed into stylish bags gives me hope for a more sustainable future.',
       author: {
-        name: 'Yasawi Karkee',
+        name: 'Yashahwi Karkee',
         role: 'Developer at Refobe',
         image: avatarImage3,
       },
@@ -62,9 +63,9 @@ const testimonials = [
       content:
         `Lezlaj's denim bags are more than just accessories - they're a statement. It's empowering to know that by using their products, I'm contributing to a cleaner, greener planet.`,
       author: {
-        name: 'Saurav Dhakal',
-        role: 'Creative Designer',
-        image: avatarImage4,
+        name: 'Samantha White',
+        role: 'Journalist',
+        image: avatarImage6,
       },
     },
   ],
@@ -91,7 +92,7 @@ export function Testimonials() {
             Hear from our supporters
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
-          These are the individuals and organizations we've collaborated with, 
+          These are the individuals and organizations we&apos;ve collaborated with, 
           sharing their experiences and contributions to our journey.
           </p>
         </div>

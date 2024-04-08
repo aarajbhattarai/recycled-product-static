@@ -8,13 +8,16 @@ export function Footer() {
   return (
     <footer className="bg-slate-50">
       <Container>
-        <div className="py-16">
-          <Logo className="mx-auto h-10 w-auto" />
+        <div className=" flex flex-col gap-5 items-center">
+          {/* <div className="  space-x-40 block w-[20%]">
+
+          <Logo className=" h-10  items-center"/> 
+          </div> */}
           <nav className="mt-10 text-sm" aria-label="quick links">
             <div className="-my-1 flex justify-center gap-x-6">
               <NavLink href="#features">Features</NavLink>
               <NavLink href="#testimonials">Testimonials</NavLink>
-              <NavLink href="#pricing">Pricing</NavLink>
+              <NavLink href="#faq">FAQ</NavLink>
             </div>
           </nav>
         </div>
@@ -40,7 +43,7 @@ export function Footer() {
             </Link>
           </div>
           <p className="mt-6 text-sm text-slate-500 sm:mt-0">
-            Copyright &copy; {new Date().getFullYear()} TaxPal. All rights
+            Copyright &copy; {new Date().getFullYear()} Lezlaj. All rights
             reserved.
           </p>
         </div>

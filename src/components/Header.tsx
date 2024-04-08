@@ -55,7 +55,7 @@ function MobileNavigation() {
   return (
     <Popover>
       <Popover.Button
-        className="relative z-10 flex h-8 w-8 items-center justify-center ui-not-focus-visible:outline-none"
+        className="relative z-10 flex h-8 w-8 items-center justify-center ui-not-focus-visible:outline-none  "
         aria-label="Toggle Navigation"
       >
         {({ open }) => <MobileNavIcon open={open} />}
@@ -87,7 +87,7 @@ function MobileNavigation() {
           >
             <MobileNavLink href="#features">Features</MobileNavLink>
             <MobileNavLink href="#testimonials">Testimonials</MobileNavLink>
-            <MobileNavLink href="#pricing">Pricing</MobileNavLink>
+            <MobileNavLink href="#faq">FAQ</MobileNavLink>
             <hr className="m-2 border-slate-300/40" />
             <MobileNavLink href="/login">Sign in</MobileNavLink>
           </Popover.Panel>
@@ -99,28 +99,32 @@ function MobileNavigation() {
 
 export function Header() {
   return (
-    <header className="py-10">
+    <header className="py-8">
       <Container>
         <nav className="relative z-50 flex justify-between">
-          <div className="flex items-center md:gap-x-12">
+          <div className=" ">
+
+            <div className="d">
+
             <Link href="#" aria-label="Home">
-              <Logo className="h-10 w-auto" />
+              <Logo className="h-8 w-auto" />
             </Link>
-            <div className="hidden md:flex md:gap-x-6">
+            </div>
+            <div className="hidden md:flex md:gap-8 absolute bottom-0 left-80 ml-20 ">
               <NavLink href="#features">Features</NavLink>
               <NavLink href="#testimonials">Testimonials</NavLink>
-              <NavLink href="#pricing">Pricing</NavLink>
+              <NavLink href="#faq">FAQ</NavLink>
             </div>
           </div>
-          <div className="flex items-center gap-x-5 md:gap-x-8">
-            <div className="hidden md:block">
-              <NavLink href="/login">Sign in</NavLink>
-            </div>
-            <Button href="/register" color="blue">
+          <div className="flex items-center gap-x-5 md:gap-x-8 md:mt-10">
+            {/* <div className="hidden md:block">
+              <NavLink href="/login">Sign in</NavLink>    
+            </div> */}
+            {/* <Button href="/register" color="blue">
               <span>
                 Get started <span className="hidden lg:inline">today</span>
               </span>
-            </Button>
+            </Button> */}
             <div className="-mr-1 md:hidden">
               <MobileNavigation />
             </div>
